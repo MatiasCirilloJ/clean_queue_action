@@ -20,3 +20,5 @@ criteria:
 action:
   ref: clean_queue_pack.clean_queue_action.py
   description: Clean RabbitMQ queue
+  parameters:
+    queue: "{{trigger.body.queue}}"
