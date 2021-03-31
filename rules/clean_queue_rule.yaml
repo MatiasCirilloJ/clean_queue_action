@@ -9,7 +9,8 @@ type:
 enabled: true
 trigger:
   type: "core.st2.webhook"
-  parameters: {}
+  parameters:
+    url: "clean_queue"
 context:
   user: st2admin
 criteria:
