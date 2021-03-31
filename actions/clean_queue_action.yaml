@@ -1,6 +1,6 @@
   
 ---
-name: "clean_queue"
+name: "clean_queue_action"
 runner_type: "python-script"
 description: "Clean a RabbitMQ queue"
 enabled: true
