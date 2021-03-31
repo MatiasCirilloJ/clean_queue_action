@@ -1,0 +1,21 @@
+---
+pack: clean_queue_pack
+ref: clean_queue_pack.clean_queue_rule
+name: clean_queue_rule
+uid: rule:clean_queue_pack:clean_queue_rule
+type:
+  ref: standard
+  parameters: {}
+enabled: true
+trigger:
+  type: "core.st2.webhook"
+  parameters: {}
+context:
+  user: st2admin
+criteria:
+  trigger.body.queue:
+    type: exists
+    pattern: {}
+action:
+  ref: clean_queue_pack.clean_queue_action.py
+  description: Clean RabbitMQ queue
