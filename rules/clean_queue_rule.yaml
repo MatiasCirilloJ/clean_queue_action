@@ -4,7 +4,7 @@ ref: clean_queue_pack.clean_queue_rule
 name: clean_queue_rule
 enabled: true
 trigger:
-  type: "core.st2.execution"
+  type: "core.st2.webhook"
   parameters:
     url: "clean_queue"
 criteria:
