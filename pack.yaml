@@ -1,0 +1,11 @@
+---
+ref: clean_queue_action
+name : clean_queue_action
+description : Clean Queue in RabbitMQ
+keywords:
+  - python3
+version: 0.0.1
+python_versions:
+  - "3"
+author : MCirillo
+email : matias.cirillo@la.logicalis.com
