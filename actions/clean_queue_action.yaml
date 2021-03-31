@@ -1,1 +1,13 @@
-
+  
+---
+name: "clean_queue"
+runner_type: "python-script"
+description: "Clean a RabbitMQ queue"
+enabled: true
+entry_point: "clean_queue_action.py"
+parameters:
+    queue:
+        type: "string"
+        description: "Queue to clean."
+        required: true
+        position: 0
