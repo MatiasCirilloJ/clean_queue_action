@@ -1,6 +1,6 @@
 ---
-ref: clean_queue_action
-name : clean_queue_action
+ref: clean_queue_pack
+name : clean_queue_pack
 description : Clean Queue in RabbitMQ
 keywords:
   - python3
